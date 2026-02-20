@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Medical Data (HIPAA/GDPR precaution)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.dcm
+*.nii
+*.nii.gz
+
+# Results (generated)
+data/results/*
+!data/results/.gitkeep
+*.pdf
+*.png
+!demo/expected_outputs/*.pdf
+
+# Models (large files)
+*.pth
+*.onnx
+*.ckpt
+checkpoints/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
