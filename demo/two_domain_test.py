@@ -173,9 +173,10 @@ def run_two_domain_evaluation(args):
     print("\n" + "="*80)
     print("KEY FINDINGS")
     print("="*80)
-    print(f"✅ MURA: {results[0]['coverage']:.1%} coverage, {results[0]['physics_reduction_pct']:.1f}% efficiency gain")
-    print(f"✅ Bone Age: {results[1]['coverage']:.1%} coverage, {results[1]['physics_reduction_pct']:.1f}% efficiency gain")
-    print("✅ Single architecture (DenseNet121) works for both anatomical domains")
+    for r in results:
+        print(f"[OK] {r['domain']}: {r['coverage']:.1%} coverage, {r['physics_reduction_pct']:.1f}% efficiency gain")
+    if len(results) == 2:
+        print("[OK] Single architecture (DenseNet121) works for both anatomical domains")
 
 
 def evaluate_domain(model, cp, physics, test_loader, domain_name):
