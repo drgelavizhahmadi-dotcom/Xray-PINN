@@ -1,0 +1,2002 @@
+[
+  {
+    "idx": 0,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 1,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 2,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 3,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 4,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 5,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 6,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 7,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 8,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 9,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 10,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 11,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 12,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 13,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 14,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 15,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 16,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 17,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 18,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 19,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 20,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 21,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 22,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 23,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 24,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 25,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 26,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 27,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 28,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 29,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 30,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 31,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 32,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 33,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 34,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 35,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 36,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 37,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 38,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 39,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 40,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 41,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 42,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 43,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 44,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 45,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 46,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 47,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 48,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 49,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 50,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 51,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 52,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 53,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 54,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 55,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 56,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 57,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 58,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 59,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 60,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 61,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 62,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 63,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 64,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 65,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 66,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 67,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 68,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 69,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 70,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 71,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 72,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 73,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 74,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 75,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 76,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 77,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 78,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 79,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 80,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 81,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 82,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 83,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 84,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 85,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 86,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 87,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 88,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 89,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 90,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 91,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 92,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 93,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 94,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 95,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 96,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 97,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 98,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 99,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 100,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 101,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 102,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 103,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 104,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 105,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 106,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 107,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 108,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 109,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 110,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 111,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 112,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 113,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 114,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 115,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 116,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 117,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 118,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 119,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 120,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 121,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 122,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 123,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 124,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 125,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 126,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 127,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 128,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 129,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 130,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 131,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 132,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 133,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 134,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 135,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 136,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 137,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 138,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 139,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 140,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 141,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 142,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 143,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 144,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 145,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 146,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 147,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 148,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 149,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 150,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 151,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 152,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 153,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 154,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 155,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 156,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 157,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 158,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 159,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 160,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 161,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 162,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 163,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 164,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 165,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 166,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 167,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 168,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 169,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 170,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 171,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 172,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 173,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 174,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 175,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 176,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 177,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 178,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 179,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 180,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 181,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 182,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 183,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 184,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 185,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 186,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 187,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 188,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 189,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 190,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 191,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 192,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 193,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 194,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 195,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 196,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 197,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 198,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 199,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 200,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 201,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 202,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 203,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 204,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 205,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 206,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 207,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 208,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 209,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 210,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 211,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 212,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 213,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 214,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 215,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 216,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 217,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 218,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 219,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 220,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 221,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 222,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 223,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 224,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 225,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 226,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 227,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 228,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 229,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 230,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 231,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 232,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 233,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 234,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 235,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 236,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 237,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 238,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 239,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 240,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 241,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 242,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 243,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 244,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 245,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 246,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 247,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 248,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 249,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 250,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 251,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 252,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 253,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 254,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 255,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 256,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 257,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 258,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 259,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 260,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 261,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 262,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 263,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 264,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 265,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 266,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 267,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 268,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 269,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 270,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 271,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 272,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 273,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 274,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 275,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 276,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 277,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 278,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 279,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 280,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 281,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 282,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 283,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 284,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 285,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 286,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 287,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 288,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 289,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 290,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 291,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 292,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 293,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 294,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 295,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 296,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 297,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 298,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 299,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 300,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 301,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 302,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 303,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 304,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 305,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 306,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 307,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 308,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 309,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 310,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 311,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 312,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 313,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 314,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 315,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 316,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 317,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 318,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 319,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 320,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 321,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 322,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 323,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 324,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 325,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 326,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 327,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 328,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 329,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 330,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 331,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 332,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 333,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 334,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 335,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 336,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 337,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 338,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 339,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 340,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 341,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 342,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 343,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 344,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 345,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 346,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 347,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 348,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 349,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 350,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 351,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 352,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 353,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 354,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 355,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 356,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 357,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 358,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 359,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 360,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 361,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 362,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 363,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 364,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 365,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 366,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 367,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 368,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 369,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 370,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 371,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 372,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 373,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 374,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 375,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 376,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 377,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 378,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 379,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 380,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 381,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 382,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 383,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 384,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 385,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 386,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 387,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 388,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 389,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 390,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 391,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 392,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 393,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 394,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 395,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 396,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 397,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 398,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 399,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 400,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 401,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 402,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 403,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 404,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 405,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 406,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 407,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 408,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 409,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 410,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 411,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 412,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 413,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 414,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 415,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 416,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 417,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 418,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 419,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 420,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 421,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 422,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 423,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 424,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 425,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 426,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 427,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 428,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 429,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 430,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 431,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 432,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 433,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 434,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 435,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 436,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 437,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 438,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 439,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 440,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 441,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 442,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 443,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 444,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 445,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 446,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 447,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 448,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 449,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 450,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 451,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 452,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 453,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 454,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 455,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 456,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 457,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 458,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 459,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 460,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 461,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 462,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 463,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 464,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 465,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 466,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 467,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 468,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 469,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 470,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 471,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 472,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 473,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 474,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 475,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 476,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 477,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 478,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 479,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 480,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 481,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 482,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 483,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 484,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 485,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 486,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 487,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 488,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 489,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 490,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 491,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 492,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 493,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 494,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 495,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 496,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 497,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 498,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  },
+  {
+    "idx": 499,
+    "error": "Given groups=1, weight of size [64, 1, 7, 7], expected input[1, 3, 224, 224] to have 1 channels, but got 3 channels instead"
+  }
+]
