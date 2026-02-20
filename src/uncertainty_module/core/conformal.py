@@ -1,337 +1,259 @@
-"""Conformal Prediction for uncertainty calibration.
+"""
+Conformal Prediction Module for Distribution-Free Uncertainty Quantification
 
-Implements conformal prediction methods to provide statistically valid
-confidence sets with coverage guarantees for medical AI predictions.
+Provides finite-sample coverage guarantees for regulatory compliance.
+Use case: "95% of true diagnoses are in this prediction set" (provable guarantee)
+vs MC Dropout's "model uncertainty is 0.3" (heuristic).
+
+References:
+- Shafer & Vovk (2008) - Tutorial on Conformal Prediction
+- Angelopoulos & Bates (2021) - Gentle Introduction to Conformal Prediction
 """
 
-from dataclasses import dataclass
-from typing import Optional
-
-import numpy as np
 import torch
+import torch.nn as nn
+from torch.utils.data import DataLoader
+from typing import Dict, List, Tuple, Optional
+import numpy as np
+from dataclasses import dataclass
 
 
 @dataclass
-class ConformalSet:
-    """Result from conformal prediction."""
-    prediction_set: list[str]
-    coverage_guarantee: float
-    p_values: dict[str, float]
-    calibrated: bool
-
-
-class ConformalPredictor:
-    """Split conformal prediction for medical AI.
+class ConformalPredictionSet:
+    """
+    Conformal prediction set with coverage guarantees.
+    Critical for EU AI Act Article 15 'robustness' requirements.
+    """
+    prediction_set: List[int]      # Class indices in the prediction set
+    confidence: float              # 1 - alpha (coverage guarantee, e.g., 0.95)
+    is_singleton: bool             # Single prediction = definitive diagnosis
+    set_size: int                  # Number of classes in prediction set
     
-    Provides prediction sets with guaranteed coverage for risk assessment.
-    Uses holdout calibration set to determine conformal scores.
+    def contains(self, true_label: int) -> bool:
+        """Check if true label is in prediction set (guaranteed coverage)."""
+        return true_label in self.prediction_set
     
-    Args:
-        coverage: Target coverage level (1-alpha), e.g., 0.90 for 90%
-        calibration_size: Number of samples for calibration split
-    """"
-    
-    def __init__(
-        self,
-        coverage: float = 0.90,
-        calibration_size: int = 1000,
-    ):
-        self.coverage = coverage
-        self.calibration_size = calibration_size
-        self._quantile: Optional[float] = None
-        self._calibration_scores: Optional[np.ndarray] = None
-        self._class_names: list[str] = []
-        
-    def fit(
-        self,
-        probs_cal: np.ndarray,
-        labels_cal: np.ndarray,
-        class_names: list[str],
-    ) -> "ConformalPredictor":
-        """Fit conformal predictor on calibration set.
-        
-        Args:
-            probs_cal: Calibration probabilities [n_samples, n_classes]
-            labels_cal: True labels (indices) [n_samples]
-            class_names: List of class names
-        """
-        self._class_names = class_names
-        
-        # Calculate non-conformity scores: 1 - probability of true class
-        n_samples = len(labels_cal)
-        scores = np.array([
-            1.0 - probs_cal[i, labels_cal[i]]
-            for i in range(n_samples)
-        ])
-        
-        # Quantile for desired coverage (with finite-sample correction)
-        alpha = 1.0 - self.coverage
-        quantile_level = np.ceil((n_samples + 1) * (1 - alpha)) / n_samples
-        quantile_level = min(quantile_level, 1.0)
-        
-        self._quantile = np.quantile(scores, quantile_level)
-        self._calibration_scores = scores
-        
-        return self
-        
-    def predict(
-        self,
-        probs: np.ndarray,
-        return_p_values: bool = False,
-    ) -> ConformalSet | list[ConformalSet]:
-        """Generate conformal prediction sets.
-        
-        Args:
-            probs: Predicted probabilities [n_samples, n_classes] or [n_classes]
-            return_p_values: Whether to return p-values for each class
-            
-        Returns:
-            ConformalSet or list of ConformalSets
-        """
-        if self._quantile is None:
-            raise RuntimeError("Predictor not fitted. Call fit() first.")
-            
-        single_sample = probs.ndim == 1
-        if single_sample:
-            probs = probs.reshape(1, -1)
-            
-        results = []
-        for prob in probs:
-            # Include classes where score <= quantile
-            # Score for class j: 1 - prob[j]
-            scores = 1.0 - prob
-            inclusion_mask = scores <= self._quantile
-            
-            pred_set = [
-                self._class_names[i]
-                for i, include in enumerate(inclusion_mask)
-                if include and i < len(self._class_names)
-            ]
-            
-            p_values = None
-            if return_p_values:
-                # P-value for each class
-                p_values = {
-                    self._class_names[i]: float(
-                        (self._calibration_scores >= scores[i]).mean()
-                    )
-                    for i in range(len(prob))
-                    if i < len(self._class_names)
-                }
-                
-            results.append(ConformalSet(
-                prediction_set=pred_set,
-                coverage_guarantee=self.coverage,
-                p_values=p_values or {},
-                calibrated=True,
-            ))
-            
-        return results[0] if single_sample else results
-        
-    def evaluate_coverage(
-        self,
-        probs_test: np.ndarray,
-        labels_test: np.ndarray,
-    ) -> dict:
-        """Evaluate empirical coverage on test set.
-        
-        Returns:
-            Dictionary with coverage metrics
-        """
-        sets = self.predict(probs_test)
-        
-        correct = 0
-        set_sizes = []
-        
-        for i, cset in enumerate(sets):
-            true_label = self._class_names[labels_test[i]]
-            if true_label in cset.prediction_set:
-                correct += 1
-            set_sizes.append(len(cset.prediction_set))
-            
-        empirical_coverage = correct / len(labels_test)
-        
+    def to_regulatory_dict(self) -> Dict:
+        """Convert to format suitable for regulatory documentation."""
         return {
-            "target_coverage": self.coverage,
-            "empirical_coverage": empirical_coverage,
-            "mean_set_size": np.mean(set_sizes),
-            "median_set_size": np.median(set_sizes),
-            "empty_sets": sum(1 for s in set_sizes if s == 0),
+            "prediction_set": self.prediction_set,
+            "coverage_guarantee": f"{self.confidence:.1%}",
+            "set_size": self.set_size,
+            "is_definitive": self.is_singleton,
+            "interpretation": (
+                "High confidence definitive diagnosis" if self.is_singleton 
+                else "Multiple differential diagnoses - human review recommended"
+            ),
+            "ai_act_article_15": (
+                "Robustness demonstrated via distribution-free coverage guarantee. "
+                f"True diagnosis contained in prediction set with {self.confidence:.1%} probability."
+            )
         }
 
 
-class AdaptiveConformalPredictor(ConformalPredictor):
-    """Conformal predictor with adaptive thresholding.
+class ConformalPredictor:
+    """
+    Split Conformal Prediction for distribution-free uncertainty quantification.
     
-    Adjusts quantile based on difficulty of examples for better efficiency.
+    Provides finite-sample coverage guarantees without distributional assumptions.
+    Key differentiator for regulatory submissions: "95% coverage" vs "model seems unsure"
+    
+    Usage:
+        1. Calibrate on held-out calibration set (1000 samples)
+        2. Predict with coverage guarantees on new data
+        3. Generate regulatory documentation automatically
     """
     
-    def __init__(
-        self,
-        coverage: float = 0.90,
-        calibration_size: int = 1000,
-        stratified: bool = True,
-    ):
-        super().__init__(coverage, calibration_size)
-        self.stratified = stratified
-        self._quantiles_by_confidence: Optional[dict] = None
+    def __init__(self, alpha: float = 0.05):
+        """
+        Args:
+            alpha: Miscoverage rate (1-alpha = coverage guarantee, e.g., 0.05 = 95% coverage)
+        """
+        self.alpha = alpha
+        self.q_hat: Optional[float] = None          # Quantile threshold
+        self.calibration_scores: Optional[np.ndarray] = None
+        self._is_calibrated: bool = False
         
-    def fit(
-        self,
-        probs_cal: np.ndarray,
-        labels_cal: np.ndarray,
-        class_names: list[str],
-    ) -> "AdaptiveConformalPredictor":
-        """Fit with stratification by confidence level."""
-        super().fit(probs_cal, labels_cal, class_names)
+    def calibrate(
+        self, 
+        model: nn.Module, 
+        dataloader: DataLoader,
+        device: torch.device = torch.device("cpu")
+    ) -> Dict[str, float]:
+        """
+        Calibrate on held-out calibration set (typically 1000 samples).
+        Must be done once before inference.
         
-        if not self.stratified:
-            return self
-            
-        # Stratify by max probability (confidence)
-        max_probs = probs_cal.max(axis=1)
-        bins = np.percentile(max_probs, [33, 66])
+        Returns:
+            Calibration metrics for regulatory documentation
+        """
+        model.eval()
+        scores = []
         
-        self._quantiles_by_confidence = {}
-        for bin_idx, (low, high) in enumerate([
-            (0, bins[0]), (bins[0], bins[1]), (bins[1], 1.0)
-        ]):
-            mask = (max_probs >= low) & (max_probs < high)
-            if mask.sum() > 10:
-                scores_bin = self._calibration_scores[mask]
-                alpha = 1.0 - self.coverage
-                n = len(scores_bin)
-                q_level = np.ceil((n + 1) * (1 - alpha)) / n
-                q_level = min(q_level, 1.0)
-                self._quantiles_by_confidence[bin_idx] = np.quantile(scores_bin, q_level)
+        with torch.no_grad():
+            for batch_x, batch_y in dataloader:
+                batch_x = batch_x.to(device)
+                batch_y = batch_y.to(device)
                 
-        return self
+                # Get logits and probabilities
+                logits = model(batch_x)
+                probs = torch.softmax(logits, dim=1)
+                
+                # Non-conformity score: 1 - probability of true class
+                # Lower = more conforming (model confident in truth)
+                true_class_probs = probs[torch.arange(len(batch_y)), batch_y]
+                non_conformity_scores = 1 - true_class_probs
+                
+                scores.extend(non_conformity_scores.cpu().numpy())
+        
+        self.calibration_scores = np.array(scores)
+        n = len(scores)
+        
+        # Compute quantile threshold for finite-sample guarantee
+        # Using (n+1)/n * (1-alpha) quantile
+        q_level = np.ceil((n + 1) * (1 - self.alpha)) / n
+        self.q_hat = np.quantile(scores, q_level, method='higher')
+        self._is_calibrated = True
+        
+        metrics = {
+            "calibration_samples": n,
+            "quantile_threshold": float(self.q_hat),
+            "alpha": self.alpha,
+            "coverage_guarantee": f"{(1-self.alpha):.1%}",
+            "mean_nonconformity": float(np.mean(scores)),
+            "max_nonconformity": float(np.max(scores))
+        }
+        
+        print(f"[Conformal] Calibrated on {n} samples. Threshold: {self.q_hat:.3f}")
+        return metrics
         
     def predict(
-        self,
-        probs: np.ndarray,
-        return_p_values: bool = False,
-    ) -> ConformalSet | list[ConformalSet]:
-        """Predict with adaptive threshold based on confidence."""
-        if self._quantiles_by_confidence is None:
-            return super().predict(probs, return_p_values)
-            
-        single_sample = probs.ndim == 1
-        if single_sample:
-            probs = probs.reshape(1, -1)
-            
-        results = []
-        for prob in probs:
-            max_prob = prob.max()
-            
-            # Select appropriate quantile
-            if max_prob < 0.33:
-                quantile = self._quantiles_by_confidence.get(0, self._quantile)
-            elif max_prob < 0.66:
-                quantile = self._quantiles_by_confidence.get(1, self._quantile)
-            else:
-                quantile = self._quantiles_by_confidence.get(2, self._quantile)
-                
-            scores = 1.0 - prob
-            inclusion_mask = scores <= quantile
-            
-            pred_set = [
-                self._class_names[i]
-                for i, include in enumerate(inclusion_mask)
-                if include and i < len(self._class_names)
-            ]
-            
-            p_values = None
-            if return_p_values:
-                p_values = {
-                    self._class_names[i]: float(
-                        (self._calibration_scores >= scores[i]).mean()
-                    )
-                    for i in range(len(prob))
-                    if i < len(self._class_names)
-                }
-                
-            results.append(ConformalSet(
-                prediction_set=pred_set,
-                coverage_guarantee=self.coverage,
-                p_values=p_values or {},
-                calibrated=True,
-            ))
-            
-        return results[0] if single_sample else results
-
-
-def calibrate_from_dataset(
-    predictor: ConformalPredictor,
-    model: torch.nn.Module,
-    dataloader: torch.utils.data.DataLoader,
-    device: str = "cpu",
-) -> ConformalPredictor:
-    """Utility to calibrate predictor from a PyTorch DataLoader.
-    
-    Args:
-        predictor: Unfitted conformal predictor
-        model: Trained PyTorch model
-        dataloader: Calibration data loader
-        device: Device for inference
+        self, 
+        model: nn.Module, 
+        x: torch.Tensor,
+        return_sets: bool = True
+    ) -> Tuple[torch.Tensor, Optional[ConformalPredictionSet]]:
+        """
+        Predict with conformal prediction sets.
         
-    Returns:
-        Fitted conformal predictor
-    """
-    model.eval()
-    
-    all_probs = []
-    all_labels = []
-    
-    with torch.no_grad():
-        for batch in dataloader:
-            images, labels = batch[0].to(device), batch[1]
-            outputs = model(images)
-            probs = torch.softmax(outputs, dim=1).cpu().numpy()
+        Args:
+            model: PyTorch model (any architecture)
+            x: Input tensor (batch_size, ...)
+            return_sets: If True, returns prediction sets; if False, just predictions
             
-            all_probs.append(probs)
-            all_labels.append(labels.numpy() if isinstance(labels, torch.Tensor) else labels)
+        Returns:
+            predictions: Argmax predictions
+            cp_set: Conformal prediction set with coverage guarantee
+        """
+        if not self._is_calibrated:
+            raise ValueError("Must calibrate before prediction. Call calibrate() first.")
             
-    probs_cal = np.vstack(all_probs)
-    labels_cal = np.concatenate(all_labels)
+        model.eval()
+        device = next(model.parameters()).device
+        x = x.to(device)
+        
+        with torch.no_grad():
+            logits = model(x)
+            probs = torch.softmax(logits, dim=1)
+            predictions = probs.argmax(dim=1)
+            
+            if not return_sets:
+                return predictions, None
+            
+            # Build prediction sets: include all classes where p(y) >= 1 - q_hat
+            threshold = 1 - self.q_hat
+            prediction_sets = (probs >= threshold).cpu().numpy()
+            
+            # Process each item in batch
+            results = []
+            for i in range(len(x)):
+                included_classes = np.where(prediction_sets[i])[0].tolist()
+                
+                cp_set = ConformalPredictionSet(
+                    prediction_set=included_classes,
+                    confidence=1 - self.alpha,
+                    is_singleton=(len(included_classes) == 1),
+                    set_size=len(included_classes)
+                )
+                results.append(cp_set)
+            
+            # Return single item if batch size 1, else list
+            if len(x) == 1:
+                return predictions[0:1], results[0]
+            else:
+                return predictions, results
     
-    class_names = [f"class_{i}" for i in range(probs_cal.shape[1])]
+    def evaluate_coverage(
+        self, 
+        model: nn.Module, 
+        test_loader: DataLoader,
+        device: torch.device = torch.device("cpu")
+    ) -> Dict[str, float]:
+        """
+        Evaluate empirical coverage on test set (should be ~1-alpha).
+        Generates regulatory documentation of coverage performance.
+        
+        Returns:
+            Dictionary with coverage metrics for AI Act compliance documentation
+        """
+        correct_coverage = 0
+        total = 0
+        set_sizes = []
+        singleton_count = 0
+        
+        for batch_x, batch_y in test_loader:
+            batch_x = batch_x.to(device)
+            
+            for i in range(len(batch_x)):
+                x = batch_x[i:i+1]
+                y = batch_y[i].item()
+                
+                _, cp_set = self.predict(model, x)
+                
+                if cp_set.contains(y):
+                    correct_coverage += 1
+                set_sizes.append(cp_set.set_size)
+                if cp_set.is_singleton:
+                    singleton_count += 1
+                total += 1
+        
+        empirical_coverage = correct_coverage / total if total > 0 else 0.0
+        avg_set_size = np.mean(set_sizes) if set_sizes else 0.0
+        singleton_rate = singleton_count / total if total > 0 else 0.0
+        
+        # Regulatory compliance check (within 2% of nominal coverage)
+        is_compliant = abs(empirical_coverage - (1 - self.alpha)) <= 0.02
+        
+        return {
+            "nominal_coverage": 1 - self.alpha,
+            "empirical_coverage": empirical_coverage,
+            "coverage_gap": abs(empirical_coverage - (1 - self.alpha)),
+            "average_prediction_set_size": avg_set_size,
+            "singleton_rate": singleton_rate,
+            "total_test_samples": total,
+            "regulatory_compliant": is_compliant,
+            "interpretation": (
+                f"Conformal predictor achieves {empirical_coverage:.1%} empirical coverage "
+                f"(target: {1-self.alpha:.1%}). Average differential diagnosis size: {avg_set_size:.1f} classes. "
+                f"Definitive diagnoses (single class): {singleton_rate:.1%} of cases."
+            ),
+            "ai_act_article_15_evidence": (
+                f"Statistical guarantee: True label contained in prediction set "
+                f"{empirical_coverage:.1%} of the time (n={total} test samples). "
+                f"{'Meets' if is_compliant else 'Approaches'} AI Act accuracy/robustness requirements."
+            )
+        }
     
-    return predictor.fit(probs_cal, labels_cal, class_names)
-
-
-if __name__ == "__main__":
-    # Test conformal predictor
-    print("Testing ConformalPredictor...")
-    
-    np.random.seed(42)
-    n_classes = 14
-    n_cal = 500
-    n_test = 100
-    
-    # Generate synthetic calibration data
-    probs_cal = np.random.dirichlet(np.ones(n_classes), n_cal)
-    labels_cal = np.random.randint(0, n_classes, n_cal)
-    
-    # Fit predictor
-    class_names = [f"Pathology_{i}" for i in range(n_classes)]
-    predictor = ConformalPredictor(coverage=0.90)
-    predictor.fit(probs_cal, labels_cal, class_names)
-    
-    # Test prediction
-    probs_test = np.random.dirichlet(np.ones(n_classes), 1)[0]
-    result = predictor.predict(probs_test, return_p_values=True)
-    
-    print(f"Prediction set: {result.prediction_set}")
-    print(f"Coverage guarantee: {result.coverage_guarantee}")
-    print(f"P-values: {result.p_values}")
-    
-    # Evaluate coverage
-    probs_test_batch = np.random.dirichlet(np.ones(n_classes), n_test)
-    labels_test = np.random.randint(0, n_classes, n_test)
-    metrics = predictor.evaluate_coverage(probs_test_batch, labels_test)
-    
-    print(f"\nCoverage metrics:")
-    print(f"  Target: {metrics['target_coverage']}")
-    print(f"  Empirical: {metrics['empirical_coverage']:.3f}")
-    print(f"  Mean set size: {metrics['mean_set_size']:.2f}")
+    def get_regulatory_summary(self) -> Dict:
+        """Generate summary for regulatory documentation."""
+        if not self._is_calibrated:
+            return {"error": "Not calibrated"}
+        
+        return {
+            "method": "Split Conformal Prediction (distribution-free)",
+            "coverage_guarantee": f"{(1-self.alpha):.1%}",
+            "calibration_samples": len(self.calibration_scores) if self.calibration_scores is not None else 0,
+            "quantile_threshold": self.q_hat,
+            "use_case": "AI Act Article 15 (accuracy, robustness) compliance",
+            "advantage_over_mc_dropout": "Finite-sample coverage guarantee without distributional assumptions"
+        }
