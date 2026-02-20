@@ -18,9 +18,9 @@ from uncertainty_module.core.conformal import ConformalPredictor
 sys.path.insert(0, 'mdss_uncertainty_module/src')
 try:
     from uncertainty_module.core.engine import UncertaintyEngine
-    print("✅ Legacy UncertaintyEngine imported successfully")
+    print("[OK] Legacy UncertaintyEngine imported successfully")
 except ImportError as e:
-    print(f"⚠️  Could not import legacy engine: {e}")
+    print(f"[WARN] Could not import legacy engine: {e}")
     print("Using vanilla PyTorch model instead")
     UncertaintyEngine = None
 
@@ -91,10 +91,10 @@ def test_conformal_standalone():
     print("\n" + "="*60)
     print("MDSS PITCH SUMMARY")
     print("="*60)
-    print(f"✅ Coverage guarantee: {coverage_metrics['empirical_coverage']:.1%} (target 95%)")
-    print(f"✅ Average differential diagnoses: {coverage_metrics['average_prediction_set_size']:.1f} classes")
-    print(f"✅ Definitive diagnoses: {coverage_metrics['singleton_rate']:.1%} of cases")
-    print(f"✅ Regulatory compliant: {coverage_metrics['regulatory_compliant']}")
+    print(f"[OK] Coverage guarantee: {coverage_metrics['empirical_coverage']:.1%} (target 95%)")
+    print(f"[OK] Average differential diagnoses: {coverage_metrics['average_prediction_set_size']:.1f} classes")
+    print(f"[OK] Definitive diagnoses: {coverage_metrics['singleton_rate']:.1%} of cases")
+    print(f"[OK] Regulatory compliant: {coverage_metrics['regulatory_compliant']}")
     print("\nKey advantage over MC Dropout:")
     print("   MC Dropout: 'Model uncertainty is 0.3' (heuristic)")
     print("   Conformal:  'True diagnosis is in this set 95% of the time' (guarantee)")
@@ -104,9 +104,9 @@ def test_conformal_standalone():
 if __name__ == "__main__":
     try:
         cp, metrics = test_conformal_standalone()
-        print("\n✅ Demo completed successfully!")
+        print("\n[SUCCESS] Demo completed successfully!")
         print("Conformal prediction module is ready for integration.")
     except Exception as e:
-        print(f"\n❌ Demo failed: {e}")
+        print(f"\n[FAILED] Demo failed: {e}")
         import traceback
         traceback.print_exc()
