@@ -146,7 +146,7 @@ def run_two_domain_evaluation(args):
         cal_dataset = BoneAgeDataset(args.bone_csv, args.bone_root)
         
         # Find test CSV
-        test_csv = str(args.bone_csv).replace('calibration', 'test')
+        test_csv = str(args.bone_csv).replace('calibration.csv', 'test.csv')
         test_dataset = BoneAgeDataset(test_csv, args.bone_root)
         
         cal_loader = DataLoader(cal_dataset, batch_size=16, shuffle=False)
@@ -255,7 +255,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--extremity_csv', default='data/mura/processed/mura_valid_calibration.csv')
     parser.add_argument('--extremity_root', default='data/mura')
-    parser.add_argument('--bone_csv', default='data/bone_age/labels.csv')
+    parser.add_argument('--bone_csv', default='data/bone_age/calibration.csv')
     parser.add_argument('--bone_root', default='data/bone_age')
     
     args = parser.parse_args()
