@@ -18,7 +18,11 @@ def parse_mura_csv(data_dir='data/mura', split='valid'):
         split: 'train' or 'valid'
     """
     data = []
-    base_path = os.path.join(data_dir, f'MURA-v1.1/{split}')
+    # Handle nested MURA-v1.1/MURA-v1.1 structure
+    mura_path = os.path.join(data_dir, 'MURA-v1.1')
+    if os.path.exists(os.path.join(mura_path, 'MURA-v1.1')):
+        mura_path = os.path.join(mura_path, 'MURA-v1.1')
+    base_path = os.path.join(mura_path, split)
     
     if not os.path.exists(base_path):
         print(f"Warning: {base_path} not found. Skipping.")
