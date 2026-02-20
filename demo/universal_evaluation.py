@@ -124,6 +124,8 @@ class UniversalExperiment:
         conformal_sizes = []
         physics_sizes = []
         coverages = []
+        top1_correct = []
+        max_probs = []
         
         with torch.no_grad():
             for batch_x, batch_y in test_loader:
@@ -140,15 +142,18 @@ class UniversalExperiment:
                     if cp_set is None:
                         continue
                     
+                    # Track Top-1 accuracy and confidence
+                    logits = model(x)
+                    probs = torch.softmax(logits, dim=1).cpu().numpy()[0]
+                    pred_class = probs.argmax()
+                    top1_correct.append(1.0 if pred_class == y else 0.0)
+                    max_probs.append(probs.max())
+                    
                     # Baseline conformal set size
                     baseline_size = cp_set.set_size
                     conformal_sizes.append(baseline_size)
                     
                     # Apply physics constraints
-                    # Get probabilities for physics filtering
-                    logits = model(x)
-                    probs = torch.softmax(logits, dim=1).cpu().numpy()[0]
-                    
                     if hasattr(self.physics, 'apply'):
                         physics_set = self.physics.apply(cp_set.prediction_set, probs)
                         physics_size = len(physics_set)
@@ -161,7 +166,15 @@ class UniversalExperiment:
                     covered = y in cp_set.prediction_set
                     coverages.append(1.0 if covered else 0.0)
         
+        # Calculate metrics
         avg_coverage = np.mean(coverages) if coverages else 0.0
+        top1_acc = np.mean(top1_correct) if top1_correct else 0.0
+        avg_conf = np.mean(max_probs) if max_probs else 0.0
+        
+        # Debug output
+        print(f"    [Debug] Top-1 accuracy: {top1_acc:.2%}")
+        print(f"    [Debug] Average max probability: {avg_conf:.3f}")
+        print(f"    [Debug] Coverage: {avg_coverage:.2%}")
         avg_conformal = np.mean(conformal_sizes) if conformal_sizes else 0.0
         avg_physics = np.mean(physics_sizes) if physics_sizes else 0.0
         
