@@ -190,6 +190,34 @@ def test_model_compliance(model_name: str, model: nn.Module,
     
     return results
 
+def test_physics_enhancement(model_name, model, test_loader, cp):
+    """Test physics layer improvement on top of conformal."""
+    from uncertainty_module.core.medical_physics import PhysicsEnhancedConformalPredictor
+    
+    physics_cp = PhysicsEnhancedConformalPredictor(cp)
+    
+    # Test on 10 samples
+    improvements = []
+    
+    for batch_x, batch_y in test_loader:
+        for i in range(min(10, len(batch_x))):
+            x = batch_x[i:i+1].to(DEVICE)
+            
+            physics_set, metrics = physics_cp.predict_with_physics(model, x)
+            
+            if metrics:
+                improvements.append(metrics['reduction_percent'])
+        
+        break  # Just first batch
+    
+    avg_improvement = np.mean(improvements) if improvements else 0
+    
+    return {
+        'model': model_name,
+        'physics_improvement': avg_improvement,
+        'efficiency_gain': f"{avg_improvement:.1f}%"
+    }
+
 def generate_compliance_report(all_results: List[Dict]) -> pd.DataFrame:
     """Generate comparative compliance report."""
     df = pd.DataFrame(all_results)
@@ -294,6 +322,25 @@ def main():
     
     # Print summary
     final_df = print_ai_act_summary(df)
+    
+    # Physics layer efficiency test
+    print("\n" + "="*80)
+    print("PHYSICS LAYER EFFICIENCY GAINS")
+    print("="*80)
+    
+    physics_results = []
+    for model_name, model in model_list:
+        # Reuse the calibrated predictor from earlier
+        # Note: We need to recalibrate for this test
+        cp = ConformalPredictor(alpha=0.05)
+        cp.calibrate(model, cal_loader, device=DEVICE)
+        result = test_physics_enhancement(model_name, model, test_loader, cp)
+        physics_results.append(result)
+        print(f"  {model_name}: {result['efficiency_gain']} reduction in prediction set size")
+    
+    avg_gain = np.mean([r['physics_improvement'] for r in physics_results])
+    print(f"\nAverage efficiency gain across all models: {avg_gain:.1f}%")
+    print("   (Physics layer removes anatomically impossible diagnoses)")
     
     # Save to CSV
     csv_path = "demo/ai_act_compliance_results.csv"
