@@ -1,0 +1,4 @@
+dataset,anatomy,accuracy,coverage,target,conformal_size,physics_size,physics_reduction
+MURA_Extremity,Long Bones (Fracture),0.38,0.94,0.95,1.9,1.08,43.157894736842096
+LERA_BoneAge,Hand/Wrist (Development),0.22,0.88,0.95,3.78,2.0,47.08994708994708
+Montgomery_Chest,Lungs (TB/Normal),0.4878048780487805,0.975609756097561,0.95,1.9268292682926829,1.5609756097560976,18.98734177215189

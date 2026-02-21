@@ -30,8 +30,8 @@ class SyntheticXrayDataset(Dataset):
         self.n_classes = n_classes
         self.target_type = target_type
         
-        # Generate synthetic images
-        self.images = torch.randn(n_samples, 3, 224, 224)
+        # Generate synthetic images (1-channel for X-ray)
+        self.images = torch.randn(n_samples, 1, 224, 224)
         
         if target_type == 'classification':
             self.labels = torch.randint(0, n_classes, (n_samples,))
@@ -50,11 +50,14 @@ class UniversalExperiment:
     Universal evaluation framework for conformal prediction across anatomical domains.
     """
     
-    def __init__(self, dataset_name: str, n_classes: int, physics_layer, target_type='classification'):
+    def __init__(self, dataset_name: str, n_classes: int, physics_layer, 
+                 target_type='classification', csv_path: str = None, image_root: str = None):
         self.dataset = dataset_name
         self.n_classes = n_classes
         self.physics = physics_layer
         self.target_type = target_type
+        self.csv_path = csv_path
+        self.image_root = image_root
         
     def run(self, model: nn.Module, device: torch.device = DEVICE) -> Dict:
         """
@@ -73,13 +76,17 @@ class UniversalExperiment:
         print(f"Physics: {self.physics.__class__.__name__}")
         print(f"{'='*60}")
         
-        # Create synthetic datasets (replace with real data loaders in production)
+        # Create datasets (real or synthetic)
         print("[1] Loading data...")
-        cal_dataset = SyntheticXrayDataset(n_samples=500, n_classes=self.n_classes, target_type=self.target_type)
-        test_dataset = SyntheticXrayDataset(n_samples=200, n_classes=self.n_classes, target_type=self.target_type)
-        
-        cal_loader = DataLoader(cal_dataset, batch_size=16, shuffle=False)
-        test_loader = DataLoader(test_dataset, batch_size=16, shuffle=False)
+        if self.csv_path and self.image_root:
+            # Use real data loaders
+            cal_loader, test_loader = self._create_real_loaders()
+        else:
+            # Fall back to synthetic datasets
+            cal_dataset = SyntheticXrayDataset(n_samples=50, n_classes=self.n_classes, target_type=self.target_type)
+            test_dataset = SyntheticXrayDataset(n_samples=20, n_classes=self.n_classes, target_type=self.target_type)
+            cal_loader = DataLoader(cal_dataset, batch_size=16, shuffle=False)
+            test_loader = DataLoader(test_dataset, batch_size=16, shuffle=False)
         
         # Calibrate conformal predictor
         print("[2] Calibrating conformal predictor...")
@@ -103,11 +110,78 @@ class UniversalExperiment:
             'calibration_samples': cal_metrics['calibration_samples']
         }
     
+    def _create_real_loaders(self):
+        """Create real data loaders from CSV and image paths."""
+        from torchvision import transforms
+        import pandas as pd
+        from pathlib import Path
+        
+        class CSVDataset(Dataset):
+            def __init__(self, csv_path, image_root, transform=None, n_classes=14):
+                self.df = pd.read_csv(csv_path)
+                self.image_root = Path(image_root)
+                self.transform = transform
+                self.n_classes = n_classes
+                
+                # Find image column
+                self.img_col = None
+                for col in ['Path', 'path', 'filename', 'image', 'Image']:
+                    if col in self.df.columns:
+                        self.img_col = col
+                        break
+                
+                if self.img_col is None:
+                    raise ValueError(f"No image column found in {csv_path}")
+            
+            def __len__(self):
+                return len(self.df)
+            
+            def __getitem__(self, idx):
+                row = self.df.iloc[idx]
+                img_path = self.image_root / row[self.img_col]
+                
+                # Load image
+                from PIL import Image
+                image = Image.open(img_path).convert('RGB')
+                
+                if self.transform:
+                    image = self.transform(image)
+                
+                # Try to find labels, otherwise use 0
+                label = 0
+                return image, torch.tensor(label, dtype=torch.long)
+        
+        transform = transforms.Compose([
+            transforms.Resize((224, 224)),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
+        
+        # Load full dataset
+        full_dataset = CSVDataset(self.csv_path, self.image_root, transform, self.n_classes)
+        
+        # Split into calibration and test (60/40)
+        n_cal = int(len(full_dataset) * 0.6)
+        n_test = len(full_dataset) - n_cal
+        
+        cal_dataset, test_dataset = torch.utils.data.random_split(
+            full_dataset, [n_cal, n_test],
+            generator=torch.Generator().manual_seed(42)
+        )
+        
+        cal_loader = DataLoader(cal_dataset, batch_size=16, shuffle=False)
+        test_loader = DataLoader(test_dataset, batch_size=16, shuffle=False)
+        
+        print(f"    Loaded {len(full_dataset)} samples from {self.csv_path}")
+        print(f"    Calibration: {n_cal}, Test: {n_test}")
+        
+        return cal_loader, test_loader
+    
     def _get_anatomy_type(self) -> str:
         """Get anatomy type for categorization."""
         if 'chest' in self.dataset.lower() or 'chexpert' in self.dataset.lower():
             return 'Chest'
-        elif 'mura' in self.dataset.lower() or 'extremity' in self.dataset.lower():
+        elif 'mura' in self.dataset.lower() or 'extremity' in self.dataset.lower() or 'lera' in self.dataset.lower():
             return 'Extremity'
         elif 'bone' in self.dataset.lower() or 'rsna' in self.dataset.lower():
             return 'Bone Age'

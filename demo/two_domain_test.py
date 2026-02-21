@@ -14,7 +14,8 @@ from torchvision import models, transforms
 from PIL import Image
 from pathlib import Path
 
-sys.path.insert(0, 'src')
+sys.path.insert(0, 'mdss_uncertainty_module/src')
+sys.path.insert(0, 'src')  # fallback
 from uncertainty_module.core.conformal import ConformalPredictor
 from uncertainty_module.core.physics_extremity import ExtremityPhysics
 from uncertainty_module.core.physics_bone import BoneAgePhysics
@@ -56,8 +57,10 @@ class MURADataset(Dataset):
 
 class BoneAgeDataset(Dataset):
     """Bone Age dataset from CSV with labels."""
-    def __init__(self, csv_path, root_dir, transform=None):
+    def __init__(self, csv_path, root_dir, transform=None, max_samples=None):
         self.df = pd.read_csv(csv_path)
+        if max_samples:
+            self.df = self.df.sample(min(max_samples, len(self.df)), random_state=42)
         self.root_dir = Path(root_dir)
         self.transform = transform or transforms.Compose([
             transforms.Resize((224, 224)),
@@ -71,10 +74,8 @@ class BoneAgeDataset(Dataset):
     
     def __getitem__(self, idx):
         row = self.df.iloc[idx]
-        # Handle relative paths
+        # Handle relative paths - image_path is relative to working dir
         img_path = Path(row['image_path'])
-        if not img_path.is_absolute():
-            img_path = self.root_dir / img_path
         image = Image.open(img_path).convert('L')
         
         if self.transform:
